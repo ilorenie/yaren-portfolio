@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yaren Yılmaz - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      color: #222;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: #fff;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+      padding: 40px 60px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    header h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: #7f8c8d;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      color: #2980b9;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #2980b9;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      color: #34495e;
+      max-width: 700px;
+    }
+
+    #projects p.notice {
+      font-style: italic;
+      color: #7f8c8d;
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+
+    ul {
+      list-style: none;
+      max-width: 700px;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #ecf0f1;
+      margin-bottom: 12px;
+      padding: 15px 20px;
+      border-radius: 8px;
+      font-weight: 500;
+      color: #2c3e50;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    ul li:hover {
+      transform: translateX(10px);
+      background: #d6eaf8;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    strong {
+      color: #21618c;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 30px 20px;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
+      #about p, ul li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Yaren Yılmaz</h1>
+      <p>Game Developer / Student / Designer</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I am Yaren, passionate about game development. I enjoy constantly learning and working on new projects.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>2024-2026 - Kyrenia American University, Computer Programming</li>
+        <li>2020-2024 - Zübeyde Hanım Vocational and Technical Anatolian High School, Software Development </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+  <h2>Projects</h2>
+  <p class="notice">Below are my individual projects that I am currently developing and have not yet published. I respect the confidentiality policies of the company I work for, so I cannot share other projects at this time.</p>
+  <ul>
+    <li>
+      <strong>Tumble Cube:</strong> A 2D multiplayer game developed with Unity. (Only the UI design is shown here, since both the main game animations and the UI are still in development.)
+      <video width="100%" controls style="margin-top: 10px; border-radius: 8px;">
+        <source src="TumbleCubeUI.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+    <li>
+      <strong>Dysphrenia:</strong> A 3D horror game developed with Unity.
+      <video width="100%" controls style="margin-top: 10px; border-radius: 8px;">
+        <source src="Dysphrenia.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </li>
+  </ul>
+</section>
+
+  </div>
+</body>
+</html>
