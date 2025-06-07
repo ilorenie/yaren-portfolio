@@ -6,7 +6,6 @@
   <title>Yaren Yılmaz - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <style>
-    /* Reset */
     * {
       margin: 0;
       padding: 0;
@@ -22,6 +21,8 @@
       display: flex;
       justify-content: center;
       padding: 40px 20px;
+      flex-direction: column;
+      align-items: center;
     }
 
     .container {
@@ -31,6 +32,7 @@
       border-radius: 12px;
       box-shadow: 0 12px 24px rgba(0,0,0,0.1);
       padding: 40px 60px;
+      margin-bottom: 40px;
     }
 
     header {
@@ -71,13 +73,6 @@
       max-width: 700px;
     }
 
-    #projects p.notice {
-      font-style: italic;
-      color: #7f8c8d;
-      margin-bottom: 20px;
-      max-width: 700px;
-    }
-
     ul {
       list-style: none;
       max-width: 700px;
@@ -94,26 +89,46 @@
       box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
       transition: transform 0.3s ease;
     }
+
     ul li:hover {
       transform: translateX(10px);
       background: #d6eaf8;
       box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
     }
 
+    a.pdf-link {
+      color: #2980b9;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a.pdf-link:hover {
+      text-decoration: underline;
+    }
+
     strong {
       color: #21618c;
+    }
+
+    video {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
     }
 
     @media (max-width: 600px) {
       .container {
         padding: 30px 20px;
       }
+
       header h1 {
         font-size: 2.2rem;
       }
+
       section h2 {
         font-size: 1.4rem;
       }
+
       #about p, ul li {
         font-size: 1rem;
       }
@@ -135,43 +150,52 @@
     <section id="education">
       <h2>Education</h2>
       <ul>
-        <li>2024-2026 - Kyrenia American University, Computer Programming</li>
-        <li>2020-2024 - Zübeyde Hanım Vocational and Technical Anatolian High School, Software Development </li>
+        <li>2024–2026 - Kyrenia American University, Computer Programming</li>
+        <li>2020–2024 - Zübeyde Hanım Vocational and Technical Anatolian High School, Software Development</li>
       </ul>
     </section>
+  </div>
 
+  <!-- Projects Container -->
+  <div class="container">
     <section id="projects">
       <h2>Projects</h2>
-      <p class="notice">Below are my individual projects that I am currently developing and have not yet published. I respect the confidentiality policies of the company I work for, so I cannot share other projects at this time.</p>
       <ul>
         <li>
-          <strong>Tumble Cube:</strong> A 2D multiplayer game developed with Unity. (Only the UI design is shown here, since both the main game animations and the UI are still in development.)
-          <video width="100%" controls style="margin-top: 10px; border-radius: 8px;">
-            <source src="TumbleCubeUI.mp4" type="video/mp4">
+          <strong>Tumble Cube:</strong> A 2D multiplayer game developed with Unity.
+          <video controls>
+            <source src="TumbleCubeUI.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </li>
         <li>
           <strong>Dysphrenia:</strong> A 3D horror game developed with Unity.
-          <video width="100%" controls style="margin-top: 10px; border-radius: 8px;">
-            <source src="Dysphrenia.mp4" type="video/mp4">
+          <video controls>
+            <source src="Dysphrenia.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </li>
       </ul>
     </section>
+  </div>
 
+  <!-- PDF Scripts Container -->
+  <div class="container">
     <section id="scripts">
-      <h2>Scripts</h2>
+      <h2>Scripts (PDF)</h2>
       <ul>
         <li>
-          <a href="https://github.com/kullaniciadi/projeadi/raw/main/PlayerMovement.pdf" target="_blank" style="color: #2980b9; font-weight: 600; text-decoration: none;">
-            Example Script (PDF) - PlayerMovement
+          <a href="https://github.com/ilorenie/yaren-portfolio/raw/main/PlayerMovement.pdf" target="_blank" rel="noopener" class="pdf-link">
+            PlayerMovement.pdf
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ilorenie/yaren-portfolio/raw/main/GameManager.pdf" target="_blank" rel="noopener" class="pdf-link">
+            GameManager.pdf
           </a>
         </li>
       </ul>
     </section>
-
   </div>
 </body>
 </html>
