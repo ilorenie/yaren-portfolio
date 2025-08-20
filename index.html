@@ -29,6 +29,7 @@
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       padding: 40px;
+      margin-bottom: 30px;
     }
 
     header {
@@ -96,23 +97,72 @@
       display: flex;
       gap: 15px;
       margin-top: 10px;
+      justify-content: center;
     }
 
     .link-icons a {
       font-weight: 600;
+    }
+
+    
+    video {
+      width: 100%;
+      height: 240px;
+      margin-top: 10px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    img {
+      width: 100%;
+      max-height: 300px;
+      margin-top: 10px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      video {
+        height: 180px;
+      }
+
+      img {
+        max-height: 200px;
+      }
+
+      header img {
+        width: 90px;
+        height: 90px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section h2 {
+        font-size: 1.3rem;
+      }
+
+      ul li {
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 25px 20px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-    
+      
       <img src="your-photo.jpg" alt="Yaren Yılmaz Photo" />
       <h1>Yaren Yılmaz</h1>
       <p>Game Developer</p>
       <div class="link-icons">
-        <a href="https://github.com/ilorenie" target="_blank">GitHub</a>
-        <a href="https://ilorenie.itch.io" target="_blank">Itch.io</a>
+        <a href="https://github.com/ilorenie" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://ilorenie.itch.io" target="_blank" rel="noopener">Itch.io</a>
       </div>
     </header>
 
@@ -141,18 +191,55 @@
         <li class="highlight">
           <strong>Tumble Cube</strong> – 2D Multiplayer Puzzle Game (Unity)<br/>
           Real-time movement and multiplayer logic designed from scratch.
+          <video controls>
+            <source src="TumbleCubeUI.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <img src="screenshotie.png" alt="Tumble Cube Screenshot" />
         </li>
+
         <li class="highlight">
           <strong>Dysphrenia</strong> – 3D Psychological Horror Game (Unity)<br/>
           Focused on atmospheric design and player interaction systems.
+          <video controls>
+            <source src="Dysphrenia.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </li>
+
         <li class="highlight">
           <strong>FluffyRun</strong> – Endless Runner (Unity, Mobile)<br/>
           Implemented ad integration and dynamic level generation.
+          <img src="fluffyone.jpeg" alt="FluffyRun Screenshot 1" />
+          <img src="fluffytwo.jpeg" alt="FluffyRun Screenshot 2" />
+          <video controls>
+            <source src="fluffyvideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </li>
+
         <li class="highlight">
           <strong>Boomerang</strong> – Turn-based Strategy Board Game<br/>
           Developed enemy AI logic and turn-based loop handling.
+          <img src="boomerang0.png" alt="Boomerang Screenshot 1" />
+          <img src="boomerang1.png" alt="Boomerang Screenshot 2" />
+        </li>
+
+        <li class="highlight">
+          <strong>Catch the Cat</strong> – Challenging reflex game<br/>
+          <video controls>
+            <source src="catchthecat.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </li>
+
+        <li class="highlight">
+          <strong>2048</strong> – Classic puzzle game clone<br/>
+          Enhanced logic and grid programming skills through development.
+          <video controls>
+            <source src="2048.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </li>
       </ul>
     </section>
