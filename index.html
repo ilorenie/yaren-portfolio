@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yaren Yılmaz - Portfolio</title>
+  <title>Yaren Yılmaz - Game Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -14,231 +14,167 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      background: #f2f4f8;
       color: #222;
       line-height: 1.6;
-      min-height: 100vh;
+      padding: 30px 20px;
       display: flex;
       justify-content: center;
-      padding: 40px 20px;
-      flex-direction: column;
-      align-items: center;
     }
 
     .container {
-      background: #fff;
       max-width: 900px;
       width: 100%;
+      background: #fff;
       border-radius: 12px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
-      padding: 40px 60px;
-      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 40px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
 
     header h1 {
+      font-size: 2.5rem;
       font-weight: 600;
-      font-size: 3rem;
       color: #2c3e50;
-      margin-bottom: 8px;
     }
 
     header p {
-      font-weight: 300;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #7f8c8d;
     }
 
     section {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     section h2 {
-      font-weight: 600;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
       color: #2980b9;
-      margin-bottom: 20px;
-      border-bottom: 3px solid #2980b9;
-      display: inline-block;
-      padding-bottom: 4px;
-    }
-
-    #about p {
-      font-size: 1.1rem;
-      color: #34495e;
-      max-width: 700px;
     }
 
     ul {
       list-style: none;
-      max-width: 700px;
       padding-left: 0;
     }
 
     ul li {
-      background: #ecf0f1;
-      margin-bottom: 12px;
-      padding: 15px 20px;
-      border-radius: 8px;
-      font-weight: 500;
-      color: #2c3e50;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      margin-bottom: 15px;
+      font-size: 1.05rem;
     }
 
-    ul li:hover {
-      transform: translateX(10px);
-      background: #d6eaf8;
-      box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
-    }
-
-    a.pdf-link {
+    a {
       color: #2980b9;
-      font-weight: 600;
       text-decoration: none;
     }
 
-    a.pdf-link:hover {
+    a:hover {
       text-decoration: underline;
     }
 
-    strong {
-      color: #21618c;
-    }
-
-    video {
-      width: 100%;
-      margin-top: 10px;
+    .highlight {
+      background: #ecf0f1;
+      padding: 12px 18px;
       border-radius: 8px;
     }
 
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
-      }
+    .link-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
 
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      section h2 {
-        font-size: 1.4rem;
-      }
-
-      #about p, ul li {
-        font-size: 1rem;
-      }
+    .link-icons a {
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
+    
+      <img src="your-photo.jpg" alt="Yaren Yılmaz Photo" />
       <h1>Yaren Yılmaz</h1>
-      <p>Game Developer / Student / Designer</p>
+      <p>Game Developer</p>
+      <div class="link-icons">
+        <a href="https://github.com/ilorenie" target="_blank">GitHub</a>
+        <a href="https://ilorenie.itch.io" target="_blank">Itch.io</a>
+      </div>
     </header>
 
     <section id="about">
       <h2>About Me</h2>
-      <p>Hello! I am Yaren, passionate about game development. I enjoy constantly learning and working on new projects.</p>
+      <p>I’m a passionate game developer who enjoys designing gameplay mechanics, coding core systems, and turning ideas into interactive experiences. I aim to create fun, polished games and always look for opportunities to learn and grow within the industry.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li class="highlight">
+          <strong>Freelance Game Developer</strong> (2022 – Present)<br/>
+          Developed several indie games using Unity for PC and mobile platforms. Managed full development lifecycle including coding, UI/UX design, and asset integration.
+        </li>
+        <li class="highlight">
+          <strong>Personal Projects</strong> (Educational & Freelance)<br/>
+          Created solo game projects, simulating real-world workflows — from GDD planning to prototyping, publishing, and maintaining game builds.
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <ul>
+        <li class="highlight">
+          <strong>Tumble Cube</strong> – 2D Multiplayer Puzzle Game (Unity)<br/>
+          Real-time movement and multiplayer logic designed from scratch.
+        </li>
+        <li class="highlight">
+          <strong>Dysphrenia</strong> – 3D Psychological Horror Game (Unity)<br/>
+          Focused on atmospheric design and player interaction systems.
+        </li>
+        <li class="highlight">
+          <strong>FluffyRun</strong> – Endless Runner (Unity, Mobile)<br/>
+          Implemented ad integration and dynamic level generation.
+        </li>
+        <li class="highlight">
+          <strong>Boomerang</strong> – Turn-based Strategy Board Game<br/>
+          Developed enemy AI logic and turn-based loop handling.
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Unity / C#</li>
+        <li>Game Design & UI/UX</li>
+        <li>2D/3D Gameplay Mechanics</li>
+        <li>Version Control (Git)</li>
+        <li>Mobile Development (iOS/Android)</li>
+        <li>Basic Photoshop, Figma</li>
+      </ul>
     </section>
 
     <section id="education">
       <h2>Education</h2>
       <ul>
-        <li>2024–2026 - Kyrenia American University, Computer Programming</li>
-        <li>2020–2024 - Zübeyde Hanım Vocational and Technical Anatolian High School, Software Development</li>
+        <li>2024–2026 — Kyrenia American University, Computer Programming</li>
+        <li>2020–2024 — Zübeyde Hanım Vocational and Technical Anatolian High School, Software Development</li>
       </ul>
-    </section>
-  </div>
-
-  <!-- Projects Container -->
-  <div class="container">
-    <section id="projects">
-  <h2>Projects</h2>
-     <p><strong>Except for a few visual materials, all assets, coding, gameplay mechanics, and development were entirely done by me.</strong></p>
-    </br>
-  <ul>
-    <li>
-      <strong>Tumble Cube:</strong> A 2D multiplayer game developed with Unity.
-      <video controls>
-        <source src="TumbleCubeUI.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <img src="screenshotie.png" alt="Tumble Cube Screenshot" style="margin-top: 10px; width: 100%; border-radius: 8px;" />
-    </li>
-
-    <li>
-      <strong>Dysphrenia:</strong> A 3D horror game developed with Unity.
-      <video controls>
-        <source src="Dysphrenia.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </li>
-
-    <li>
-      <strong>FluffyRun:</strong> A fast-paced endless runner game for mobile platforms. (+Ad system)
-      <img src="fluffyone.jpeg" alt="FluffyRun Screenshot 1" style="margin-top: 10px; width: 100%; border-radius: 8px;" />
-      <img src="fluffytwo.jpeg" alt="FluffyRun Screenshot 2" style="margin-top: 10px; width: 100%; border-radius: 8px;" />
-      <video controls>
-        <source src="fluffyvideo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </li>
-
-    <li>
-      <strong>Boomerang:</strong> A skill-based boardgame with reactive enemy waves.
-      <img src="boomerang0.png" alt="Boomerang Screenshot 1" style="margin-top: 10px; width: 100%; border-radius: 8px;" />
-      <img src="boomerang1.png" alt="Boomerang Screenshot 2" style="margin-top: 10px; width: 100%; border-radius: 8px;" />
-    </li>
-
-    <li>
-      <strong>Catch the Cat:</strong> A pretty hard game where you try to catch a sneaky cat.
-      <video controls>
-        <source src="catchthecat.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </li>
-
-    <li>
-      <strong>2048:</strong> A classic puzzle game clone made to enhance logic and grid programming skills.
-      <video controls>
-        <source src="2048.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </li>
-  </ul>
-</section>
-
-
-  </div>
-
-  <!-- PDF Scripts Container -->
-  <div class="container">
-    <section id="scripts">
-      <h2>Scripts (PDF)</h2>
-     <ul>
-  <li>
-    <a href="https://github.com/ilorenie/yaren-portfolio/raw/master/PlayerMovement.pdf" target="_blank" rel="noopener" class="pdf-link">
-      Example Script (PDF) - PlayerMovement
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/ilorenie/yaren-portfolio/raw/master/GameManager.pdf" target="_blank" rel="noopener" class="pdf-link">
-      Example Script (PDF) - GameManager
-    </a>
-  </li>
-       <li>
-    <a href="https://github.com/ilorenie/yaren-portfolio/raw/master/AnotherGameManager.pdf" target="_blank" rel="noopener" class="pdf-link">
-      Example Script (PDF) - Another GameManager
-    </a>
-  </li>
-</ul>
-
     </section>
   </div>
 </body>
